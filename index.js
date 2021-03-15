@@ -5,8 +5,7 @@ const random = require('random');
 
 const client = new Discord.Client();
 // constants
-const DISCORD_API = process.env['DISCORD_API'];
-const PREFIX = '!';
+const PREFIX = process.env['PREFIX'];
 const simpleQuotes = JSON.parse(fs.readFileSync('quotes.json'));
 
 let lastPinger = '';
@@ -32,4 +31,4 @@ client.on('message', msg => {
   }
 });
 
-client.login(DISCORD_API);
+client.login();
