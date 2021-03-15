@@ -2,10 +2,12 @@ const Discord = require('discord.js');
 const process = require('process');
 const fs = require('fs');
 const random = require('random');
+require('dotenv').config();
 
 const client = new Discord.Client();
 // constants
-const PREFIX = process.env['PREFIX'];
+
+const PREFIX = process.env.PREFIX;
 const simpleQuotes = JSON.parse(fs.readFileSync('quotes.json'));
 
 let lastPinger = '';
