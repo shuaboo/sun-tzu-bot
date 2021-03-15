@@ -1,7 +1,7 @@
 {
   "name": "sun-tzu-bot",
   "version": "1.0.0",
-  "description": "sun tzu discord bot",
+  "description": "sun tzu discord bot fafo fork",
   "engines": {
     "node": "15"
   },
@@ -19,12 +19,12 @@
     "discord",
     "bot"
   ],
-  "author": "Jonathan Feng",
+  "author": "Jerry Shu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jonathanfeng/sun-tzu-bot/issues"
+    "url": "https://github.com/shuaboo/sun-tzu-bot/issues"
   },
-  "homepage": "https://github.com/jonathanfeng/sun-tzu-bot#readme",
+  "homepage": "https://github.com/shuaboo/sun-tzu-bot#readme",
   "dependencies": {
     "discord.js": "^12.5.1",
     "random": "^3.0.3"

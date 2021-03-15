@@ -25,17 +25,11 @@ client.on('message', msg => {
 
   console.log(`commandBody = ${commandBody} args = ${args} command = ${command} lastPinger = ${lastPinger}`)
 
-  if (command === 'ping') {
-    if (msg.author.id === lastPinger) return;
-    msg.reply('lol fuck u bitch ass');
-    lastPinger = msg.author.id;
-  }
 
   if (command === 'quote') {
     const luckyNumber = random.int((min=0), (max=simpleQuotes.length-1));
-    msg.reply(`Sun Tzu says: "${simpleQuotes[luckyNumber]}"`);
+    msg.reply(`"${simpleQuotes[luckyNumber]}" — Sun Tzu`);
   }
 });
 
 client.login(DISCORD_API);
-
